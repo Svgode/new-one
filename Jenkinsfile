@@ -10,6 +10,7 @@ stages{
         stage ('install-apache') {
                   steps {
                             sh 'yum install httpd -y'
+                            sh 'service httpd start'
 }
 }
 stage ('server-start') {
